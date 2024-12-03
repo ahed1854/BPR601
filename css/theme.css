@@ -1,0 +1,90 @@
+/* Base theme */
+[data-theme="light"] {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+[data-theme="dark"] {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+/* Sidebar theme */
+[data-theme="light"] #sidebar {
+    background-color: var(--bg-light);
+}
+
+[data-theme="dark"] #sidebar {
+    background-color: var(--bg-dark);
+}
+
+/* Menu items */
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    height: 48px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    margin-right: 10px;
+}
+
+.menu-item i {
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+[data-theme="light"] .menu-item:hover {
+    background-color: var(--hover-light);
+}
+
+[data-theme="dark"] .menu-item:hover {
+    background-color: var(--hover-dark);
+}
+
+[data-theme="light"] .menu-item.active {
+    background-color: var(--active-bg-light);
+}
+
+[data-theme="dark"] .menu-item.active {
+    background-color: var(--active-bg-dark);
+}
+
+[data-theme="light"] .menu-item.active i {
+    color: var(--active-icon-light);
+}
+
+[data-theme="dark"] .menu-item.active i {
+    color: var(--active-icon-dark);
+}
+
+[data-theme="light"] .menu-item i {
+    color: var(--icon-light);
+}
+
+[data-theme="dark"] .menu-item i {
+    color: var(--icon-dark);
+}
+
+.menu-text {
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+#sidebar.open .menu-text {
+    opacity: 1;
+}
+
+/* Header theme */
+[data-theme="light"] header {
+    background-color: var(--bg-light);
+}
+
+[data-theme="dark"] header {
+    background-color: var(--bg-dark);
+}
